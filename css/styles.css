@@ -695,6 +695,7 @@ fill: currentColor;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 3px;
+  padding: 40px;
 }
 
 .modal-close-btn {
@@ -785,3 +786,42 @@ bottom: 0;
 .current {
   position: relative;
 }  
+
+.form-title {
+  color: #212121;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  }
+
+.form-label {
+  font-size: 12px;
+  color: #757575;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 1;
+  margin-top: 10px;
+  display: block;
+}  
+
+.form-input {
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.input-wraper {
+  margin-top: 4px;
+  position: relative;
+}
+
+.form-phone-icon {
+width: 12px;
+height: 12px;
+position: absolute;
+left: 14px;
+top: 50%;
+transform: translateY(-50%);
+}
