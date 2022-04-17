@@ -627,6 +627,7 @@ fill: currentColor;
 .footer-title {
   display: block;
   color: var(--white-text);
+  /* font-weight: 700; */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -824,6 +825,7 @@ bottom: 0;
 .form-input:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  outline: none;
 }
 
 .form-input:focus+.form-input-icon {
@@ -867,14 +869,6 @@ fill: currentColor;
   text-decoration: underline;
 }
 
-.agreement {
-  color: #757575;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  /* position: relative; */
-}
 
 .submit-btn {
   height: 50px;
@@ -923,13 +917,47 @@ fill: currentColor;
   color: var(--white-text);
 }
 
-/* .hidden {
-  visibility: hidden;
-} */
 
-.checkbox-icon {
+.hidden:checked {
+  /* -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none; */
+
+  display: inline-block;
   width: 16px;
   height: 15px;
-  /* position: absolute;
-  z-index: 5; */
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: -5px;
+
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csymbol id='icon-checkbox' viewBox='0 0 567 32'%3e%3cpath fill='%23212121' style='fill: var(--color1, %23212121)' d='M18.963 8.889v15.556h-16.593v-15.556h16.593zM18.963 6.667h-16.593c-1.304 0-2.37 1-2.37 2.222v15.556c0 1.222 1.067 2.222 2.37 2.222h16.593c1.304 0 2.37-1 2.37-2.222v-15.556c0-1.222-1.067-2.222-2.37-2.222z'%3e%3c/path%3e%3c/symbol%3e"),
+} 
+
+.hidden {
+  /* -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none; */
+
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csymbol id='icon-Vector1' viewBox='0 0 34 32'%3e%3cpath d='M30.341 3.556v24.889h-26.548v-24.889h26.548zM30.341 0h-26.548c-2.086 0-3.793 1.6-3.793 3.556v24.889c0 1.956 1.707 3.556 3.793 3.556h26.548c2.086 0 3.793-1.6 3.793-3.556v-24.889c0-1.956-1.707-3.556-3.793-3.556z'%3e%3c/path%3e%3c/symbol%3e");
+}
+
+.agreement {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  /* position: relative; */
 }
