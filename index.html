@@ -349,14 +349,18 @@
                 <form name="subscribe">
                     <div class="socials-footer">
                         <input type="email" class="footer-input social-footer" placeholder="E-mail">
-                        <button type="submit" class="subscribe-btn social-footer">Подписаться</button>
+                        <button type="submit" class="subscribe-btn social-footer">Подписаться
+                            <svg class="subscribe-icon" width="24" height="24">
+                                <use href="./images/sprite-bw.svg#subscribe-icon"></use>
+                            </svg> 
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon">
@@ -395,9 +399,11 @@
             <label class="form-label" for="comment">Комментарий</label>
             <textarea class="comment" name="coment" id="comment" placeholder="Введите текст"></textarea>
 
-            <input type="checkbox" required id="agreement" class="hidden">
-            <label for="agreement" class="agreement">Соглашаюсь с рассылкой и принимаю
-                <a class="contitions" href="">Условия договора</a> </label>
+            <div class="checkbox-wraper">
+                <input type="checkbox" required id="agreement" class="hidden">
+                <label for="agreement" class="agreement">Соглашаюсь с рассылкой и принимаю
+                    <a class="contitions" href="">Условия договора</a> </label>
+            </div>
 
 
             <button type="submit" class="submit-btn">Отправить</button>
